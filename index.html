@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Marquee for Offers -->
+    <marquee behavior="scroll" direction="left" scrollamount="0.5">
+        Welcome to Italian Food! Enjoy 50% off on drinks during Happy Hour (5 PM - 7 PM) & Buy One Get One Free on Desserts this Weekend!
+    </marquee>
+
+    <header>
+        <img src="https://img.freepik.com/premium-vector/italian-food-restaurant-logo_18099-2526.jpg?w=740" alt="Restaurant Logo" width="350" height="350">
+        <h1>Restaurant Reservation Portal</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#reservation">Reservation</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Chef's Specials</h2>
+            <div class="chef-specials">
+                <img src="chef1.jpg" alt="Chef Special 1">
+                <p>Truffle Pasta - Rs.750</p>
+                <img src="chef2.jpg"Chef Special 2">
+                <p>Seafood Risotto - Rs.900</p>
+            </div>
+
+            <h2>Testimonials</h2>
+            <div class="testimonials">
+                <p><strong>"Best Italian food I've ever had!"</strong> - John D.</p>
+                <p><strong>"A delightful experience, will visit again!"</strong> - Maria K.</p>
+                <p><strong>"Authentic and delicious!"</strong> - Raj P.</p>
+                <p><strong>"The atmosphere and the food are perfect!"</strong> - Sarah L.</p>
+                <p><strong>"Incredible flavors, and the service was top-notch."</strong> - Alex W.</p>
+                <p><strong>"A hidden gem in Thane, highly recommend!"</strong> - Priya S.</p>
+                <p><strong>"The pasta is divine, and the pizza is to die for!"</strong> - David R.</p>
+                <p><strong>"We had a wonderful time, and the staff was so friendly."</strong> - Emily B.</p>
+                <p><strong>"An unforgettable dining experience!"</strong> - Vikram N.</p>
+                <p><strong>"The desserts were a perfect end to a perfect meal."</strong> - Aisha M.</p>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </aside>
+        <main class="main-content">
+            <section id="home">
+                <h2>Home</h2>
+                <p>Welcome to Italian Food, where the essence of Italy comes alive in every dish...</p>
+            </section>
+            <section id="menu">
+                <h2>Our Menu</h2>
+                <figure>
+                    <img src="menu_italian.jpg" alt="menu_italian" width="500" height="400">
+                    <figcaption>Sample Dish - Rs.450</figcaption>
+                </figure>
+                <table>
+                    <caption>Our Menu</caption>
+                    <thead>
+                        <tr>
+                            <th>Dish</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Spaghetti Carbonara</td>
+                            <td>Creamy pasta with pancetta and parmesan</td>
+                            <td>Rs.410</td>
+                        </tr>
+                        <tr>
+                            <td>Margherita Pizza</td>
+                            <td>Classic pizza with fresh mozzarella and basil</td>
+                            <td>Rs.550</td>
+                        </tr>
+                        <tr>
+                            <td>Caesar Salad</td>
+                            <td>Fresh romaine lettuce with Caesar dressing</td>
+                            <td>Rs.399</td>
+                        </tr>
+                        <tr>
+                            <td>Lasagna</td>
+                            <td>Layers of pasta with meat sauce and cheese</td>
+                            <td>Rs.600</td>
+                        </tr>
+                        <tr>
+                            <td>Bruschetta</td>
+                            <td>Grilled bread topped with tomatoes and basil</td>
+                            <td>Rs.250</td>
+                        </tr>
+                        <tr>
+                            <td>Tiramisu</td>
+                            <td>Classic Italian dessert with coffee and mascarpone cheese</td>
+                            <td>Rs.350</td>
+                        </tr>
+                        <tr>
+                            <td>Minestrone Soup</td>
+                            <td>Hearty vegetable soup with pasta and beans</td>
+                            <td>Rs.299</td>
+                        </tr>
+                        <tr>
+                            <td>Fettuccine Alfredo</td>
+                            <td>Rich and creamy pasta with parmesan cheese</td>
+                            <td>Rs.480</td>
+                        </tr>
+                        <tr>
+                            <td>Risotto</td>
+                            <td>Creamy rice dish with mushrooms and parmesan</td>
+                            <td>Rs.500</td>
+                        </tr>
+                        <tr>
+                            <td>Caprese Salad</td>
+                            <td>Fresh tomatoes, mozzarella, and basil with olive oil</td>
+                            <td>Rs.400</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="reservation">
+                <h2>Make a Reservation</h2>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Reservation Details</legend>
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" name="time" required>
+                        <label for="party-size">Party Size:</label>
+                        <input type="number" id="party-size" name="party-size" min="1" required>
+                        <label for="table">Preferred Table:</label>
+                        <select id="table" name="table">
+                            <option value="window">Window</option>
+                            <option value="booth">Booth</option>
+                            <option value="outdoor">Outdoor</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Special Requests</legend>
+                        <label for="requests">Requests:</label>
+                        <textarea id="requests" name="requests" rows="4"></textarea>
+                    </fieldset>
+                    <input type="submit" value="Reserve">
+                </form>
+            </section>
+            <section id="video">
+                <h2>Promotional Video</h2>
+                <video width="600" controls>
+                    <source src="italian_recording1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <address>
+                    <p>1234 Woodfort Lane, Thane</p>
+                    <p>Email: <a href="mailto:info@italyrestaurant.com">info@italyrestaurant.com</a></p>
+                    <p>Phone: (123) 456-7890</p>
+                </address>
+                <h2>Follow Us</h2>
+                <p>
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+                    <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                </p>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Italian Food. All rights reserved.</p>
+    </footer>
+</body>
+</html>
